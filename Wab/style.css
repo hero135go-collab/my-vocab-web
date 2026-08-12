@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บรวมคำศัพท์น่ารู้</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📖 คลังคำศัพท์ภาษาอังกฤษ</h1>
+        <p>รวบรวมคำศัพท์สำหรับการเรียนรู้</p>
+    </header>
+
+    <main class="container">
+        <!-- ช่องค้นหา -->
+        <div class="search-box">
+            <input type="text" id="searchInput" onkeyup="searchWord()" placeholder="พิมพ์คำศัพท์หรือคำแปลเพื่อค้นหา...">
+        </div>
+
+        <!-- ตารางแสดงคำศัพท์ -->
+        <table id="vocabTable">
+            <thead>
+                <tr>
+                    <th>คำศัพท์ (Vocabulary)</th>
+                    <th>ประเภท (Part of Speech)</th>
+                    <th>คำแปล (Meaning)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apple</td>
+                    <td>Noun</td>
+                    <td>แอปเปิ้ล</td>
+                </tr>
+                <tr>
+                    <td>Beautiful</td>
+                    <td>Adjective</td>
+                    <td>สวยงาม</td>
+                </tr>
+                <tr>
+                    <td>Run</td>
+                    <td>Verb</td>
+                    <td>วิ่ง</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
